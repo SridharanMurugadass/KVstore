@@ -4,4 +4,4 @@
 .idea/*
 */out/*
 */target/*
-./CPEN431/dependency-reduced-pom.xml
+./kvStore/dependency-reduced-pom.xml
