@@ -1,11 +1,11 @@
-# Multi-node Topology
+# Distributed KV Store Using Java.
 
 This distributed key value store follows at-most-once semantics (`core/RequestCache.java`) and implements a gossiping algorithm for communicating group membership (`server/GossipReceiverThread.java`, `server/GossipSenderThread.java`).
 
 Consistent hashing facilitates partitioning and replication (`core/ConsistentHashRing.java`).
 
 # Server: Starting the KV store
-`java -jar -Xmx64m target/CPEN431-1.0.jar spawn -name test -port 10129`
+`java -jar -Xmx64m target/kvStore-1.0.jar spawn -name test -port 10129`
 
 # Usage
 Argument:
@@ -19,7 +19,7 @@ Required Flags:
 
 # Client: Sending requests
 e.g.
-`java -jar target/CPEN431-1.0.jar kv -ip 127.0.0.1 -port 10129 -cmd put -key 270F -value 270F`
+`java -jar target/kvStore-1.0.jar kv -ip 127.0.0.1 -port 10129 -cmd put -key 270F -value 270F`
 
 # Usage
 Argument:
