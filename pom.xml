@@ -10,7 +10,7 @@
     </prerequisites>
 
     <groupId>s31580129</groupId>
-    <artifactId>CPEN431</artifactId>
+    <artifactId>kvStore</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
